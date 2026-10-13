@@ -1,0 +1,18 @@
+feature,mi_score,rationale
+capacity,0.07718420869087073,Larger zones attract different stay lengths
+turnover_rate,0.06715818162405851,High-turnover zones have shorter sessions
+zone_type_Transit,0.032373550847445864,Identified by MI analysis
+zone_type_Educational,0.028910681503467428,Identified by MI analysis
+payment_mode_Cash,0.021020380285468043,Identified by MI analysis
+zone_type_Recreational,0.020908477082955068,Identified by MI analysis
+temperature,0.017180108752406387,Extreme temperatures alter comfort and dwell time
+payment_mode_App,0.013201792812221669,Identified by MI analysis
+zone_type_Hospital,0.011350952743196085,Identified by MI analysis
+time_period_Morning,0.010328515486737633,Identified by MI analysis
+entry_hour,0.00809143503780696,Time-of-day drives duration
+zone_type_Commercial,0.00763258490092511,Identified by MI analysis
+time_period_Afternoon,0.004606548575067926,Identified by MI analysis
+time_period_Evening,0.0,One-hot encoded nominal categorical
+time_period_Night,0.0,One-hot encoded nominal categorical
+payment_mode_Card,0.0,One-hot encoded nominal categorical
+payment_mode_UPI,0.0,One-hot encoded nominal categorical

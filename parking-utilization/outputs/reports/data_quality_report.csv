@@ -1,0 +1,10 @@
+Issue,Dataset,Affected Records,Action,Reason
+Missing exit timestamps,sessions,23,Keep open sessions; exclude from duration calc & occupancy reconstruction,Missing exit may be an active/open session
+Missing duration values,sessions,10,Recalculate from entry/exit when both are valid,Timestamps are authoritative
+Negative calculated durations,sessions,8,Flag and exclude from duration/occupancy analyses,Entry after exit is logically invalid
+Zero durations,sessions,0,Exclude from duration analyses; retain for session count,Instantaneous sessions are implausible
+Extreme durations (>24 h),sessions,0,Flag and exclude from duration statistics,Treated as outliers
+Exact duplicate rows,sessions,12,Remove all but first occurrence,Exact duplicates add no information
+Duplicate payment_id,payments,5,Remove duplicate payment rows,Duplicate IDs inflate fee totals
+Inconsistent zone labels,sessions,0,Normalise zone_id with strip/upper; all resolved to master,All zone labels match after standardisation
+Negative payment amounts,payments,0,Flag; exclude from revenue totals,Negative fees are not valid parking charges

@@ -1,0 +1,7 @@
+zone_id,location,zone_type,capacity,total_sessions,valid_sessions,turnover_rate,avg_occ_count,peak_occ_count,avg_occupancy_rate_pct,peak_occupancy_rate_pct,avg_duration_min,median_duration_min,total_fees_collected
+Z01,Central Plaza,Commercial,120,238,233,1.94,0.7,4,0.58,3.33,125.2,103.0,13728.21
+Z02,City Hospital,Hospital,85,163,161,1.89,0.63,6,0.74,7.06,176.6,154.0,12811.56
+Z03,Riverfront,Recreational,74,147,139,1.88,0.49,4,0.66,5.41,157.2,133.0,10491.14
+Z04,Railway Station,Transit,150,255,248,1.65,0.66,4,0.44,2.67,106.0,87.5,11881.03
+Z05,Market Street,Commercial,95,225,218,2.29,0.69,6,0.72,6.32,135.5,116.0,14097.39
+Z06,University,Educational,110,172,171,1.55,0.77,6,0.7,5.45,224.3,180.0,17873.11

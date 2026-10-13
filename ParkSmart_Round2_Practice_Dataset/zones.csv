@@ -1,0 +1,7 @@
+zone_id,location,capacity,zone_type
+Z01,Central Plaza,120,Commercial
+Z02,City Hospital,85,Hospital
+Z03,Riverfront,74,Recreational
+Z04,Railway Station,150,Transit
+Z05,Market Street,95,Commercial
+Z06,University,110,Educational

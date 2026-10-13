@@ -1,0 +1,15 @@
+Item,Expected,Workbook_Value,Status,Detail
+Total Sessions in Cleaned_Data,1200,=COUNTA(Cleaned_Data!A2:A1201),PASS,Matches raw dataset minus 12 exact duplicates
+Cleaned_Data Table Object,CleanedParkingData,Table registered,PASS,Enables 1-click PivotTable creation in Excel for the Web
+Valid Sessions for Stay Duration,1170,"=COUNTIF(Cleaned_Data!P2:P1201, TRUE)",PASS,Excludes 22 open sessions + 8 negative durations
+City-wide Total Spaces (Capacity),534,=SUM(Zone_Analysis!D5:D10),PASS,Sum of capacities: 120+85+74+150+95+110
+Busiest Arrival Hour,16:00 (Hour 16),"=INDEX(A8:A31, MATCH(MAX(D8:D31), D8:D31, 0))",PASS,Peak arrivals: 104 sessions (8.67% share)
+Highest Turnover Zone,Market Street (Z05),2.29,PASS,218 valid sessions / 95 spaces
+Lowest Turnover Zone,University (Z06),1.55,PASS,171 valid sessions / 110 spaces
+Highest Peak Occupancy Zone,City Hospital (Z02),7.06%,PASS,6 peak vehicles / 85 capacity * 100
+Lowest Peak Occupancy Zone,Railway Station (Z04),2.67%,PASS,4 peak vehicles / 150 capacity * 100
+Longest Stay Zone Type,Educational,224.3 min,PASS,Median stay: 180.0 min (3.0 hours)
+Shortest Stay Zone Type,Transit,106.0 min,PASS,Median stay: 87.5 min (1.46 hours)
+Total Revenue Collected,"$80,882.44",=SUM(Zone_Analysis!I5:I10),PASS,"Sum of all payment amounts across 1,200 sessions"
+Workbook Sheet Count,8,8 sheets,PASS,"Cleaned_Data, Zone_Analysis, Peak_Time, Event_Analysis, Weather_Analysis, Duration_Analysis, Pivot_Analysis, Summary"
+Charts Included,9,9 BarCharts total,PASS,"Zone_Analysis (1), Peak_Time (1), Event_Analysis (1), Weather_Analysis (1), Duration_Analysis (1), Pivot_Analysis (5 charts)"
